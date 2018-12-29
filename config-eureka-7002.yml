@@ -5,16 +5,16 @@
 
 ---
 server: 
-  port: 7001 # 注册中心占用7001端口，冒号后面必须有空格
+  port: 7002 # 注册中心占用7002端口，冒号后面必须有空格
 
 spring: 
   profiles: dev
   application:
-    name: config-eureka-7001
+    name: config-eureka-7002
     
 eureka: 
   instance: 
-    hostname: eureka7001.com
+    hostname: eureka7002.com
   client: 
     register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
     fetch-registry: false # 不通过eureka获取注册信息
@@ -28,11 +28,11 @@ server:
 spring: 
   profiles: test
   application:
-    name: config-eureka-7001
+    name: config-eureka-7002
     
 eureka: 
   instance: 
-    hostname: eureka7001.com
+    hostname: eureka7002.com
   client: 
     register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
     fetch-registry: false # 不通过eureka获取注册信息
